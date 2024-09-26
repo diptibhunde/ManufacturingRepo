@@ -1,1 +1,13 @@
-test
+
+
+
+from fosforml.model_manager.snowflakesession import get_session
+ 
+my_session = get_session()
+table_name = 'CUSTOMER_TRANSACTION_DIM1'
+sf_df = my_session.sql("select * from {}".format(table_name)) #Table info sf_df madhe ghetli
+ 
+df = sf_df.to_pandas() #table la data frame madhe store krto
+print(df.shape) #for record count
+ 
+df.head(10) #to see data

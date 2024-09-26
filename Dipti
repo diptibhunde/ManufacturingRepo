@@ -3,7 +3,7 @@ pip install fosforml
 from fosforml.model_manager.snowflakesession import get_session
 my_session = get_session()
 table_name = 'FACT_PRODUCT'
-sf_df = my_session.sql("select * from {}".format(table_name)) #Table info sf_df madhe ghetli
+sf_df = my_session.sql("select * from {}".format(table_name)) #Table info taken into sf_df 
  
 df = sf_df.to_pandas() #table la data frame madhe store krto
 print(df.shape) #for record count

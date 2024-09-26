@@ -1,5 +1,4 @@
 from fosforml.model_manager.snowflakesession import get_session
- 
 my_session = get_session()
 table_name = 'FACT_PRODUCT'
 sf_df = my_session.sql("select * from {}".format(table_name)) #Table info sf_df madhe ghetli

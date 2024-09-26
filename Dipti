@@ -1,3 +1,4 @@
+pip install fosforml
 
 from fosforml.model_manager.snowflakesession import get_session
 my_session = get_session()
